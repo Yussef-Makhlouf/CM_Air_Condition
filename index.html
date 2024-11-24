@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CM air Condition</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="./images/logo.avif" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Libraries Stylesheet -->
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- شريط المعلومات العلوي -->
+    <div class="container-fluid bg-dark text-white py-2 px-0 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt me-2"></small>
+                    <small>0596678717</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="far fa-envelope-open me-2"></small>
+                    <small>abodamamdoh680@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end  text-white">
+                <ol class="breadcrumb justify-content-end mb-0 text-white">
+                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">الشروط</a></li>
+                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">سياسة الخصوصية</a></li>
+                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">الدعم</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية شريط المعلومات العلوي -->
+
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0"><img class="img-fluid me-3" src="./images/logo.avif" alt="شعار الموقع">كول مود</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+                <a href="#about" class="nav-item nav-link">من نحن</a>
+                <a href="#projects" class="nav-item nav-link">مشاريعنا</a>
+                <a href="#features" class="nav-item nav-link">خدماتنا</a>
+                <a href="#contact" class="nav-item nav-link">اتصل بنا</a>
+            </div>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.facebook.com/profile.php?id=61564394099880"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                    href="https://www.tiktok.com/@coolmode.ac?_t=8rJTUD6jC6M&_r=1">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0"
+                    href="https://www.instagram.com/coolmood.ac/profilecard/?igsh=bWFma3A4MjQ4MXl6"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- نهاية شريط التنقل -->
+
+
+
+    <!-- الكاروسيل -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- الشريحة الأولى -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="./images/cover_.avif" alt="صورة غلاف الخدمات">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-4 animated slideInDown">نوفر أفضل خدمات إصلاح
+                                        وصيانة المكيفات</h1>
+                                    <p class="fs-5 text-white mb-4 pb-2 mx-sm-5 animated slideInDown">
+                                        نقدم حلولاً شاملة لصيانة وإصلاح أجهزة التكييف لتوفير أجواء مثالية على مدار
+                                        العام.
+                                    </p>
+                                    <a href="https://api.whatsapp.com/send?phone=%2B966596678717&context=ARB6zznZYiJMOK0a8DQ_ONQUJvIuaQNW8oqk9AZq0YednBC-xKtOxQxRTHJDW1SFUc-anCNB5WrscfZpGhTNaDtgCvjw4wsVfhwBgqJeXnfZMpeI4Bsff7ok6i35KXsiMf_MeK9g13ZhaSUzJvXh0CTNPQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGwd0xleHRuA2FlbQIxMAABHVCWbCfJCOgneiRfzUrhhZZVwuqPe_kvvW9WjbyvvtTO4-Xy0U4oX9fp3A_aem_4DUfK6WaNqTGB5hQIBllxQ"
+                                        class="btn btn-success py-3 px-5 animated slideInDown">تواصل عبر واتساب</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- الشريحة الثانية -->
+                <div class="carousel-item">
+                    <img class="w-100" src="./images/cover_.avif" alt="صورة خدمات التكييف">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-4 animated slideInDown">جودة في خدمات التكييف
+                                        والتبريد</h1>
+                                    <p class="fs-5 text-white mb-4 pb-2 mx-sm-5 animated slideInDown">
+                                        متخصصون في تقديم خدمات التبريد والتكييف الاحترافية للمنازل والشركات بجودة
+                                        استثنائية.
+                                    </p>
+                                    <a href="tel:0596678717"
+                                        class="btn btn-info py-3 px-5 animated slideInDown text-white">اتصل بنا الآن</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- أزرار التنقل بين الشرائح -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+            </button>
+        </div>
+    </div>
+    <!-- نهاية الكاروسيل -->
+
+
+
+    <!-- بداية قسم نبذة عن الشركة -->
+    <div class="container-xxl py-5" dir="rtl" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- المحتوى النصي -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6 mb-5">مرحبًا بكم في مركز خدمات التكييف والتبريد الأفضل</h1>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 ms-3" src="img/icon/icon-07-primary.png"
+                                        alt="فنيين خبراء">
+                                    <h5 class="mb-0">فنيون خبراء</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 ms-3" src="img/icon/icon-09-primary.png"
+                                        alt="أفضل خدمات بجودة عالية">
+                                    <h5 class="mb-0">أفضل خدمات بجودة عالية</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-4">
+                            نقدم خدمات تركيب وصيانة أنظمة التكييف المركزي باستخدام أحدث التقنيات
+                            مثل VRF وVRV. نحن نلتزم بتقديم الجودة والراحة لعملائنا من خلال خبراتنا المتطورة.
+                        </p>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn-lg-square bg-primary rounded-circle ms-3">
+                                            <i class="fa fa-phone-alt text-white"></i>
+                                        </div>
+                                        <h5 class="mb-0" dir="ltr">059 667 8717</h5>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 pt-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="btn-lg-square bg-primary rounded-circle ms-3">
+                                            <i class="fa fa-envelope text-white"></i>
+                                        </div>
+                                        <h5 class="mb-0">abodamamdoh680@gmail.com
+                                            </h>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- الصور -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.1s" src="./images/(13).avif"
+                                style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.3s" src="./images/(24).avif">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-50 wow zoomIn" data-wow-delay="0.5s" src="./images/(15).avif">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.7s" src="./images/(23).avif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية قسم نبذة عن الشركة -->
+
+
+    <!-- بداية قسم نبذة تعريفية عن الشركة -->
+    <div class="container-fluid facts my-5 py-5"
+        style="background: url('./images/cover_.avif') center center/cover no-repeat;">
+        <div class="container py-5 text-center text-white">
+            <h1 class="display-5 mb-4 text-white">من نحن</h1>
+            <h5 class="mb-5 font-bold text-white">
+                في "كول مود"، نلتزم بتقديم أفضل خدمات التكييف والتبريد باستخدام أحدث التقنيات العالمية مثل أنظمة
+                VRF وVRV. بفضل فريقنا المتخصص وخبراتنا الممتدة، نضمن لكم راحة مثالية وجودة عالية سواء كان ذلك في المنازل
+                أو المكاتب أو المشاريع التجارية.
+            </h5>
+            <!-- <div class="row g-5">
+            <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">2500+</h1>
+                <span class="text-primary">عملاء راضون</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">1800+</h1>
+                <span class="text-primary">مشاريع ناجحة</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">15</h1>
+                <span class="text-primary">جوائز معتمدة</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">50+</h1>
+                <span class="text-primary">أعضاء الفريق</span>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    <!-- نهاية قسم نبذة تعريفية عن الشركة -->
+
+
+
+    <!-- بداية قسم المميزات -->
+    <div class="container-xxl py-5" dir="rtl" id="features">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-6 mb-5">تكييف مركزي لا مثيل له مع شركة كول مود!</h1>
+                    <p class="mb-5">تبحث عن شركة تقوم بتركيب وتوريد وتأسيس أنظمة التكييف المركزي؟ <br>
+                        شركة كول مود هي اختيارك الأفضل والأنسب، حيث نقدم حلولاً متكاملة وخدمات متميزة في مجال التكييف
+                        المركزي بجدة بأسعار مناسبة وجودة عالية.</p>
+                    <div class="d-flex mb-5 ">
+                        <div class="flex-shrink-0 btn-square bg-primary rounded-circle p"
+                            style="width: 90px; height: 90px;">
+                            <img class="img-fluid" src="img/icon/icon-08-light.png" alt="خدمات التكييف">
+                        </div>
+                        <div class="ms-4 px-5">
+                            <h5 class="mb-3">تنفيذ أنظمة التكييف المركزي</h5>
+                            <span>توريد وتركيب وتأسيس أفضل مشاريع التكييف المركزي مثل (كونسيلد مخفي، باكيدج يونت، دولاب،
+                                كاسيت، تشيلر، VRV، VRF).</span>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5">
+                        <div class="flex-shrink-0 btn-square bg-primary rounded-circle"
+                            style="width: 90px; height: 90px;">
+                            <img class="img-fluid" src="img/icon/icon-10-light.png" alt="أسعار تنافسية">
+                        </div>
+                        <div class="ms-4 px-5">
+                            <h5 class="mb-3">صيانة أنظمة التكييف المركزي</h5>
+                            <span>نقدم خدمات صيانة شاملة لضمان أداء عالي ومستمر لأنظمة التكييف الخاصة بكم.</span>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-0">
+                        <div class="flex-shrink-0 btn-square bg-primary rounded-circle"
+                            style="width: 90px; height: 90px;">
+                            <img class="img-fluid" src="img/icon/icon-06-light.png" alt="دعم على مدار الساعة">
+                        </div>
+                        <div class="ms-4 px-5">
+                            <h5 class="mb-3">دعم فني 24/7</h5>
+                            <span>فريقنا من الإداريين والمهندسين والفنيين يعمل بخبرات وكفاءات مميزة لضمان دعم دائم على
+                                مدار الساعة.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" alt="صورة خدمات كول مود"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية قسم المميزات -->
+
+
+
+    <!-- بداية قسم الخدمات -->
+    <div class="container-xxl py-5" dir="rtl">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6 mb-5">نقدم خدمات احترافية للتكييف والتدفئة</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./images/(47).avif" alt="توريد وتركيب التكييف">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-01-light.png" alt="تركيب التكييف">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">توريد وتركيب التكييف</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./images/(65).avif" alt="أنظمة التكييف المركزي">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-02-light.png" alt="أنظمة التكييف المركزي">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">أنظمة التكييف المركزي</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./images/(64).avif" alt="خدمات الصيانة والإصلاح">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-03-light.png" alt="الصيانة">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">خدمات الصيانة والإصلاح</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./images/(50).avif" alt="العزل وتركيب الدكت">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-04-light.png" alt="العزل">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">العزل وتركيب الدكت</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./images/(49).avif" alt="تركيب الوحدات الداخلية">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-05-light.png" alt="الوحدات الداخلية">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">تركيب الوحدات الداخلية</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="./images/(20).avif" alt="الفحص السنوي">
+                        <div class="d-flex align-items-center bg-light">
+                            <div class="service-icon flex-shrink-0 bg-primary">
+                                <img class="img-fluid" src="img/icon/icon-06-light.png" alt="الفحص السنوي">
+                            </div>
+                            <a class="h4 mx-4 mb-0" href="">الفحص السنوي</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية قسم الخدمات -->
+
+
+
+    <!-- بداية قسم التكييف وخدمات الشركة -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- القسم الأول: الصورة -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="./images/Artboard 4.avif" alt="أفضل خدمات التكييف المركزي">
+                    </div>
+                </div>
+                <!-- القسم الثاني: النص -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" dir="rtl">
+                    <h1 class="display-6 mb-4">نظام تكييف مركزي احترافي يناسب الجميع</h1>
+                    <p class="mb-4">
+                        <strong>شركة كول مود</strong> هي الشركة الرائدة في جدة لتوريد وتركيب أنظمة التكييف المركزي. نقدم
+                        خدمات عالية الجودة بأسعار تنافسية تناسب جميع العملاء.
+                        نحن نتميز بخدماتنا الاحترافية التي تشمل تأسيس، تركيب، وصيانة أنظمة التكييف المركزي باستخدام أفضل
+                        المواد مثل النحاس الأمريكي المولار.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> توريد وتركيب التكييف المركزي
+                            (كونسيلد، تشيلر، VRV، وغيرها).</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> تنفيذ مشاريع متكاملة مع خدمات
+                            العزل وتركيب الدكت.</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> خطط صيانة دورية تناسب جميع
+                            الاحتياجات.</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> عروض مذهلة على كافة خدماتنا طوال
+                            العام.</li>
+                    </ul>
+                    <p>
+                        تواصل معنا الآن للاستفادة من أفضل خدمات التكييف المركزي التي تناسب جميع متطلباتك، سواء كنت تبحث
+                        عن التكييف المنزلي أو التجاري.
+                    </p>
+                    <p class="mb-0">
+                        <strong>اتصل أو راسلنا عبر الواتساب:</strong> <a href="tel:0596678717"
+                            class="text-primary">0596678717</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية قسم التكييف وخدمات الشركة -->
+    <!-- بداية قسم الخدمات المميزة -->
+    <div class="container-fluid overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <!-- القسم الأول: النص -->
+                <div class="col-lg-6 quote-text" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+                    <div class="h-100 px-4 px-sm-5 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" dir="rtl">
+                        <h1 class="text-white mb-4">خدمات متميزة للأفراد والشركات</h1>
+                        <p class="text-light mb-5">
+                            مع <strong>شركة كول مود</strong>، نقدم حلولًا متكاملة لتوريد وتركيب أنظمة التكييف المركزي
+                            للمنازل والشركات.
+                            نحن نتميز بالاحترافية والجودة، مع التزام كامل بتقديم خدمات تناسب احتياجات عملائنا بأسعار
+                            تنافسية.
+                            احصل على أنظمة تبريد حديثة وموفرة للطاقة مع فريق عملنا المتخصص.
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=%2B966596678717&context=ARB6zznZYiJMOK0a8DQ_ONQUJvIuaQNW8oqk9AZq0YednBC-xKtOxQxRTHJDW1SFUc-anCNB5WrscfZpGhTNaDtgCvjw4wsVfhwBgqJeXnfZMpeI4Bsff7ok6i35KXsiMf_MeK9g13ZhaSUzJvXh0CTNPQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGwd0xleHRuA2FlbQIxMAABHVCWbCfJCOgneiRfzUrhhZZVwuqPe_kvvW9WjbyvvtTO4-Xy0U4oX9fp3A_aem_4DUfK6WaNqTGB5hQIBllxQ"
+                            class="align-self-start btn btn-success py-3 px-5">تواصل معنا</a>
+                    </div>
+                </div>
+                <!-- القسم الثاني: الصورة -->
+                <div class="col-lg-6 quote-form" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
+                    <div class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="position-relative rounded overflow-hidden">
+                            <img class="img-fluid w-100 h-100" src="./images/profile_.avif" alt="خدمات التكييف المركزي">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية قسم الخدمات المميزة -->
+
+
+    <!-- معرض الأعمال -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 mb-5">استعرض مشاريعنا المتميزة في مجال التبريد والتكييف</h1>
+                <p>نقدم خدمات احترافية في تصميم وتنفيذ أنظمة التبريد والتكييف التي تناسب كافة البيئات، سواءً التجارية أو
+                    السكنية.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 6.avif" alt="مشروع تبريد مركزي">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5>تركيب نظام تبريد مركزي</h5>
+                            <p class="text-muted">تم تنفيذ المشروع في مركز تجاري كبير لضمان راحة العملاء والزوار.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 7.avif" alt="مشروع صيانة تكييف">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5>صيانة أنظمة التكييف</h5>
+                            <p class="text-muted">تحديث وصيانة نظام التكييف الخاص بمجمع إداري كبير.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 1.avif" alt="مشروع تصميم وحدة تبريد">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5>تصميم وحدة تبريد خاصة</h5>
+                            <p class="text-muted">حلول مبتكرة لتبريد المخازن وحفظ البضائع في درجات حرارة مثالية.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 3.avif" alt="مشروع تركيب وحدات تكييف">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5>تركيب وحدات تكييف متعددة</h5>
+                            <p class="text-muted">مشروع في فيلا سكنية لضمان توزيع مثالي للهواء البارد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية معرض الأعمال -->
+
+
+
+    <!-- عرض المشاريع -->
+    <div class="container-xxl py-5 text-center" dir="rtl" id="projects">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 mb-5">أبرز مشاريعنا في مجال التبريد والتكييف</h1>
+                <p class="mb-4 text-black-50">نعمل على تقديم حلول شاملة ومتكاملة تناسب احتياجات العملاء سواء في المنازل
+                    أو المؤسسات التجارية والصناعية.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 2.avif" alt="مشروع تركيب نظام تبريد">
+                            <div class="project-overlay">
+                                <p class="text-black-50 text-center">تركيب نظام تبريد حديث في مجمع سكني</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 4.avif" alt="مشروع صيانة وحدة تكييف">
+                            <div class="project-overlay">
+                                <p class="text-black-50">صيانة شاملة لوحدات التكييف في فندق خمس نجوم</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 3.avif" alt="مشروع تركيب وحدات تكييف صناعية">
+                            <div class="project-overlay">
+                                <p class="text-black-50">تركيب وحدات تكييف صناعية لمصنع إنتاج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 5.avif" alt="مشروع تصميم نظام تبريد">
+                            <div class="project-overlay">
+                                <p class="text-black-50">تصميم نظام تبريد خاص لمخازن الأغذية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 4.avif" alt="مشروع تحسين أنظمة التهوية">
+                            <div class="project-overlay">
+                                <p class="text-black-50">تحسين أنظمة التهوية لمبنى إداري</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 6.avif" alt="مشروع تركيب أنظمة تبريد">
+                            <div class="project-overlay">
+                                <p class="text-black-50">تركيب أنظمة تبريد لمستشفى حديث</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 1.avif" alt="مشروع تكييف الهواء">
+                            <div class="project-overlay">
+                                <p class="text-black-50">تركيب وحدات تكييف متعددة لمنزل ذكي</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="project-item">
+                        <div class="project-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="./images/Artboard 5.avif" alt="مشروع تحديث وحدات التبريد">
+                            <div class="project-overlay">
+                                <p class="text-black-50">تحديث وحدات التبريد لمتجر تجزئة كبير</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية عرض المشاريع -->
+
+
+    <!-- بداية الفوتر -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" dir="rtl" id="contact">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- وصف الشركة -->
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="text-white mb-4">
+                        <img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="شعار الشركة">كول مود
+                    </h1>
+                    <p class="text-white-50">
+                        نقدم حلولًا مبتكرة في مجال التكييف والتبريد لضمان راحة عملائنا. هدفنا توفير بيئة مثالية تجمع بين
+                        الكفاءة والجودة.
+                    </p>
+                </div>
+
+                <!-- تواصل معنا -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-light mb-4">تواصل معنا</h5>
+                    <p class="text-white-50"><i class="fa fa-map-marker-alt me-2"></i>جدة المملكة العربية السعودية</p>
+                    <p class="text-white-50"><i class="fa fa-phone-alt me-2"></i> 059 667 8717</p>
+                    <p class="text-white-50"><i class="fa fa-envelope me-2"></i>abodamamdoh680@gmail.com</p>
+                </div>
+
+                <!-- خدماتنا -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-light mb-4 text-center">خدماتنا</h5>
+                    <a class="btn btn-link text-white-50" href="#">تركيب المكيفات</a>
+                    <a class="btn btn-link text-white-50" href="#">صيانة أنظمة التبريد</a>
+                    <a class="btn btn-link text-white-50" href="#">خدمات التدفئة</a>
+                    <a class="btn btn-link text-white-50" href="#">الفحص السنوي</a>
+                </div>
+
+
+                <!-- تابعنا -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-light mb-4 text-center">تابعنا</h5>
+                    <div class="d-flex">
+                        <a class="btn btn-square rounded-circle me-2 bg-light text-dark"
+                            href="https://www.instagram.com/coolmood.ac/profilecard/?igsh=bWFma3A4MjQ4MXl6"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square rounded-circle me-2 bg-light text-dark"
+                            href="https://www.facebook.com/profile.php?id=61564394099880"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2"
+                            href="https://www.tiktok.com/@coolmode.ac?_t=8rJTUD6jC6M&_r=1">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- حقوق الملكية -->
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-white-50">
+                        &copy; <a href="#" class="text-white">كول مود للتكييف</a>، جميع الحقوق محفوظة.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white-50">
+                        تصميم بواسطة <a href="https://fashne.net" class="text-white">Fashne للتسويق الرقمي</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- نهاية الفوتر -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.rawgit.com/bfintal/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
