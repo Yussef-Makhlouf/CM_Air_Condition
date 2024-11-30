@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /index.html
+Disallow: /private/
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /api/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.php$
+Disallow: /*.sql$
+Disallow: /*.log$
+
+Sitemap: https://www.coolmood.net/sitemap.xml
+
+Crawl-delay: 10
