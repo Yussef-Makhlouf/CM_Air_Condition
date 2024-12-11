@@ -1,11 +1,57 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.coolmood.net/</loc>
-        <loc>https://www.coolmood.net/index.html</loc>
-
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.coolmood.net/</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.coolmood.net/images/logo.avif</image:loc>
+      <image:title>مكيفات جده كول مود</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.coolmood.net/#about</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.coolmood.net/images/(24).avif</image:loc>
+      <image:title>خدمات التكييف والتبريد</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.coolmood.net/#projects</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.coolmood.net/images/Artboard 6.avif</image:loc>
+      <image:title>مشاريع التكييف</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.coolmood.net/#features</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.coolmood.net/images/Artboard 7.avif</image:loc>
+      <image:title>مميزات خدماتنا</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.coolmood.net/#contact</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.coolmood.net/Compant Profile CoolMode last.pdf</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
