@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.gif
+Allow: /*.avif
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.pdf
+
+# Sitemap
+Sitemap: https://www.coolmood.net/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Social Media Profiles
+Allow: https://www.facebook.com/profile.php?id=61564394099880
+Allow: https://www.instagram.com/coolmood.ac/profilecard/?igsh=bWFma3A4MjQ4MXl6
+Allow: https://www.tiktok.com/@coolmode.ac?_t=8rJTUD6jC6M&_r=1
+
+# Specific sections
+Allow: /#about
+Allow: /#projects
+Allow: /#features
+Allow: /#contact
+Allow: /#warranty
+Allow: /#drainage-specs
+Allow: /#partners
+
+# Company Profile
+Allow: /Compant Profile CoolMode last.pdf
+
+# Host
+Host: https://www.coolmood.net
+
+# Cache settings
+Cache-Control: max-age=3600
