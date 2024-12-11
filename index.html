@@ -117,7 +117,68 @@
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link rel="preconnect" href="https://cdn.jsdelivr.net">
-                
+                <!-- Core Web Vitals Tracking -->
+<script>
+    window.addEventListener('load', function() {
+        // قياس سرعة تحميل الصفحة
+        let pageLoadTime = window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
+        gtag('event', 'page_load_time', {
+            'value': pageLoadTime
+        });
+    
+        // تتبع النقرات على أزرار التواصل
+        document.querySelectorAll('a[href*="tel:"], a[href*="whatsapp"]').forEach(button => {
+            button.addEventListener('click', function() {
+                gtag('event', 'contact_button_click', {
+                    'event_category': 'Contact',
+                    'event_label': this.href
+                });
+            });
+        });
+    
+        // تتبع تفاعلات النموذج
+        let contactForm = document.querySelector('form');
+        if(contactForm) {
+            contactForm.addEventListener('submit', function() {
+                gtag('event', 'form_submission', {
+                    'event_category': 'Forms',
+                    'event_label': 'Contact Form'
+                });
+            });
+        }
+    
+        // تتبع مشاهدة المقاطع المهمة
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    gtag('event', 'section_view', {
+                        'event_category': 'Content',
+                        'event_label': entry.target.id
+                    });
+                }
+            });
+        });
+    
+        ['features', 'projects', 'partners'].forEach(id => {
+            let element = document.getElementById(id);
+            if(element) observer.observe(element);
+        });
+    });
+    </script>
+    
+    <!-- User Experience Metrics -->
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        // قياس وقت التفاعل الأول
+        let firstInteraction = performance.now();
+        document.addEventListener('click', () => {
+            gtag('event', 'first_interaction_time', {
+                'value': performance.now() - firstInteraction
+            });
+        }, {once: true});
+    });
+    </script>
+    
 </head>
 
 <body>
@@ -1288,38 +1349,7 @@
 
             gtag('config', 'G-K1PD9H072H');
         </script>
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "تركيب وصيانة مكيفات",
-          "provider": {
-            "@type": "Organization",
-            "name": "كول مود",
-            "url": "https://www.coolmood.net",
-            "logo": "https://www.coolmood.net/images/logo.png",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+966596678717",
-              "contactType": "Customer Service",
-              "areaServed": "SA",
-              "availableLanguage": "Arabic",
-              "email": "mailto:info@coolmood.net"
-            }
-          },
-          "description": "نحن نقدم خدمات تركيب وصيانة المكيفات بكفاءة عالية في جده والمناطق المجاورة. اتصل بنا اليوم للحصول على أفضل خدمة.",
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.coolmood.net/contact",
-            "priceCurrency": "SAR",
-            "price": "حسب الخدمة",
-            "eligibleRegion": {
-              "@type": "Place",
-              "name": "جده، المملكة العربية السعودية"
-            }
-          }
-        }
-        </script>
+
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 </body>
