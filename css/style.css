@@ -43,4 +43,15 @@ body {
     color: #003366; /* الأزرق الغامق */
     margin-bottom: 20px;
   }
-  
+  .logo-title {
+    font-size: 1.5rem; /* تقليل حجم الخط للعنوان */
+    word-wrap: break-word; /* السماح بتقسيم الكلمات الطويلة */
+    text-align: center; /* محاذاة النص في المنتصف */
+}
+
+@media (max-width: 768px) {
+    .logo-title {
+        font-size: 1.2rem; /* تقليل الحجم أكثر للشاشات الصغيرة */
+        line-height: 1.5; /* تحسين المسافات بين السطور */
+    }
+}
