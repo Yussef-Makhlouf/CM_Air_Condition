@@ -20,10 +20,7 @@ Sitemap: https://www.coolmood.net/sitemap.xml
 # Crawl-delay
 Crawl-delay: 10
 
-# Social Media Profiles
-Allow: https://www.facebook.com/profile.php?id=61564394099880
-Allow: https://www.instagram.com/coolmood.ac/profilecard/?igsh=bWFma3A4MjQ4MXl6
-Allow: https://www.tiktok.com/@coolmode.ac?_t=8rJTUD6jC6M&_r=1
+
 
 # Specific sections
 Allow: /#about
@@ -41,4 +38,3 @@ Allow: /Compant Profile CoolMode last.pdf
 Host: https://www.coolmood.net
 
 # Cache settings
-Cache-Control: max-age=3600
