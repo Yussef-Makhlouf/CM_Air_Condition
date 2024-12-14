@@ -55,3 +55,30 @@ body {
         line-height: 1.5; /* تحسين المسافات بين السطور */
     }
 }
+.faq-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.faq-header {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.accordion-button {
+  font-weight: bold;
+  background-color: #f8f9fa;
+  color: #0056b3;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
+.accordion-body {
+  background-color: #f8f9fa;
+  line-height: 1.8;
+}
