@@ -82,3 +82,96 @@ body {
   background-color: #f8f9fa;
   line-height: 1.8;
 }
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-card {
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+.duct-specs {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
+                url('../images/baner_Hero.avif') center/cover;
+}
+.h5{
+    color: #fff;
+    font-weight: 600;
+    font-family:Almarai,sans-serif
+}
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.spec-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spec-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--bs-primary), var(--bs-info));
+    color: white;
+}
+
+.card-content {
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.warranty-card {
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-success-soft { background-color: rgba(25, 135, 84, 0.1); }
+.bg-primary-soft { background-color: rgba(13, 110, 253, 0.1); }
+.bg-warning-soft { background-color: rgba(255, 193, 7, 0.1); }
+.warranty-badge {
+    font-size: 0.875rem;
+    font-weight: 500;
+}

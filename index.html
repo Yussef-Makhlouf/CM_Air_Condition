@@ -306,25 +306,30 @@
 
 
 
-    <!-- الكاروسيل -->
+<section class="carousel-section">
     <div class="container-fluid p-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 <!-- الشريحة الأولى -->
                 <div class="carousel-item active">
-                    <img loading="lazy" class="img-fluid" src="./images/baner_Hero.avif" alt="صورة غلاف الخدمات">
-                    <div class="carousel-caption">
+                    <picture>
+                        <!-- توفير صورة مختلفة للجوال لتحسين الأداء -->
+                        <source srcset="./images/baner_Hero_mobile.avif" media="(max-width: 768px)">
+                        <source srcset="./images/baner_Hero.avif" media="(min-width: 769px)">
+                        <img class="w-100" loading="lazy" src="./images/baner_Hero.avif" alt="صيانة مكيفات جدة والمملكة">
+                    </picture>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">نوفر أفضل خدمات إصلاح
-                                        وصيانة المكيفات في جده و المملكه</h1>
-                                    <p class="fs-5 text-white mb-4 pb-2 mx-sm-5 animated slideInDown">
-                                        نقدم حلولاً شاملة لصيانة وإصلاح أجهزة التكييف لتوفير أجواء مثالية على مدار
-                                        العام. في جده والمملكة العربية السعودية.
+                                <div class="col-lg-8 pt-5">
+                                    <h1 class="display-5 fw-bold text-white mb-4 animated fadeInDown">
+                                        نوفر أفضل خدمات إصلاح وصيانة المكيفات في جده والمملكة
+                                    </h1>
+                                    <p class="fs-5 text-light mb-4 animated fadeInUp">
+                                        نقدم حلولاً شاملة لصيانة وإصلاح أجهزة التكييف لتوفير أجواء مثالية على مدار العام.
                                     </p>
-                                    <a href="https://api.whatsapp.com/send?phone=%2B966596678717&context=ARB6zznZYiJMOK0a8DQ_ONQUJvIuaQNW8oqk9AZq0YednBC-xKtOxQxRTHJDW1SFUc-anCNB5WrscfZpGhTNaDtgCvjw4wsVfhwBgqJeXnfZMpeI4Bsff7ok6i35KXsiMf_MeK9g13ZhaSUzJvXh0CTNPQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGwd0xleHRuA2FlbQIxMAABHVCWbCfJCOgneiRfzUrhhZZVwuqPe_kvvW9WjbyvvtTO4-Xy0U4oX9fp3A_aem_4DUfK6WaNqTGB5hQIBllxQ"
-                                        class="btn btn-success py-3 px-5 animated slideInDown">تواصل عبر واتساب</a>
+                                    <a href="https://api.whatsapp.com/send?phone=%2B966596678717"
+                                        class="btn btn-success py-3 px-5 animated fadeInUp">تواصل عبر واتساب</a>
                                 </div>
                             </div>
                         </div>
@@ -332,20 +337,22 @@
                 </div>
                 <!-- الشريحة الثانية -->
                 <div class="carousel-item">
-                    <img class="w-100" loading="lazy" src="./images/baner_Hero.avif" alt="صورة خدمات التكييف">
-                    <div class="carousel-caption">
+                    <picture>
+                        <source srcset="./images/baner_Hero_mobile.avif" media="(max-width: 768px)">
+                        <source srcset="./images/baner_Hero.avif" media="(min-width: 769px)">
+                        <img class="w-100" loading="lazy" src="./images/baner_Hero.avif" alt="خدمات التكييف من كول مود">
+                    </picture>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">
-                                        مكيفات جدة – حلول التبريد والتكييف الشاملة من كول مود
+                                <div class="col-lg-8 pt-5">
+                                    <h1 class="display-5 fw-bold text-white mb-4 animated fadeInDown">
+                                        مكيفات جدة – حلول التبريد والتكييف الشاملة
                                     </h1>
-                                    <p class="fs-5 text-white mb-4 pb-2 mx-sm-5 animated slideInDown">
-                                        متخصصون في تقديم خدمات التبريد والتكييف الاحترافية للمنازل والشركات بجودة في جده
-                                        والمملكة العربية السعودية.
+                                    <p class="fs-5 text-light mb-4 animated fadeInUp">
+                                        متخصصون في تقديم خدمات التبريد والتكييف الاحترافية بجودة عالية.
                                     </p>
-                                    <a href="tel:0596678717"
-                                        class="btn btn-info py-3 px-5 animated slideInDown text-white">اتصل بنا الآن</a>
+                                    <a href="tel:0596678717" class="btn btn-info py-3 px-5 animated fadeInUp text-white">اتصل بنا الآن</a>
                                 </div>
                             </div>
                         </div>
@@ -353,19 +360,18 @@
                 </div>
             </div>
             <!-- أزرار التنقل بين الشرائح -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev"
-                aria-label="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">السابق</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next"
-                aria-label="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">التالي</span>
             </button>
         </div>
     </div>
-    <!-- نهاية الكاروسيل -->
+</section>
+
 
     <!-- بداية قسم نبذة عن الشركة -->
     <div class="container-xxl py-5" dir="rtl" id="about">
@@ -373,53 +379,46 @@
             <div class="row g-5 align-items-center">
                 <!-- المحتوى النصي -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <h1 class="display-6 mb-5"> مرحبًا بكم في مركز خدمات التكييف والتبريد الأفضل في جده و المملكه
-                        </h1>
-                        <div class="row g-4 mb-4">
+                    <div class="content-wrapper h-100">
+                        <h1 class="display-6 mb-5 fw-bold">مرحبًا بكم في مركز خدمات التكييف والتبريد الأفضل في جده و المملكه</h1>
+                        
+                        <div class="features-grid row g-4 mb-4">
                             <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 ms-3" src="img/icon/icon-07-primary.png"
-                                        alt="فنيين خبراء">
+                                <div class="feature-card d-flex align-items-center p-3 rounded-3 shadow-sm hover-lift">
+                                    <img class="flex-shrink-0 ms-3" width="48" height="48" src="img/icon/icon-07-primary.png" alt="فنيين خبراء" loading="lazy">
                                     <h5 class="mb-0">فنيون خبراء في جده</h5>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 ms-3" src="img/icon/icon-09-primary.png"
-                                        alt="أفضل خدمات بجودة عالية">
+                                <div class="feature-card d-flex align-items-center p-3 rounded-3 shadow-sm hover-lift">
+                                    <img class="flex-shrink-0 ms-3" width="48" height="48" src="img/icon/icon-09-primary.png" alt="أفضل خدمات" loading="lazy">
                                     <h5 class="mb-0">أفضل خدمات بجودة عالية</h5>
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-4">
+    
+                        <p class="lead mb-4 text-black">
                             نقدم خدمات تركيب وصيانة أنظمة التكييف المركزي باستخدام أحدث التقنيات
                             مثل VRF وVRV. نحن نلتزم بتقديم الجودة والراحة لعملائنا من خلال خبراتنا المتطورة.
                         </p>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="col">
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center">
-                                        <div class="btn-lg-square bg-primary rounded-circle ms-3">
-                                            <i class="fa fa-phone-alt text-white"></i>
-                                        </div>
-                                        <h5 class="mb-0 " dir="ltr">059 667 8717</h5>
-                                    </div>
+    
+                        <div class="contact-info border-top mt-4 pt-4">
+                            <a href="tel:0596678717" class="contact-link d-flex align-items-center mb-3 text-decoration-none">
+                                <div class="btn-lg-square bg-primary rounded-circle ms-3 pulse">
+                                    <i class="fa fa-phone-alt text-white"></i>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center pt-3 ">
-                                        <div class="btn-lg-square bg-primary rounded-circle ms-3  px-3">
-                                            <i class="fa fa-envelope text-white "></i>
-                                        </div>
-                                        <h6 class="mb-0"
-                                            style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                                            info@coolmood.net</>
-                                    </div>
+                                <h5 class="mb-0" dir="ltr">059 667 8717</h5>
+                            </a>
+                            <a href="mailto:info@coolmood.net" class="contact-link d-flex align-items-center text-decoration-none">
+                                <div class="btn-lg-square bg-primary rounded-circle ms-3 pulse">
+                                    <i class="fa fa-envelope text-white"></i>
                                 </div>
-                            </div>
+                                <h6 class="mb-0">info@coolmood.net</h6>
+                            </a>
                         </div>
                     </div>
                 </div>
+    
                 <!-- الصور -->
                 <div class="col-lg-6">
                     <div class="row g-3">
@@ -447,353 +446,391 @@
     <!-- نهاية قسم نبذة عن الشركة -->
 
 
+<!-- بداية قسم نبذة تعريفية عن الشركة -->
+<section class="duct-specs py-5" dir="rtl" id="duct-specifications" 
+         itemscope itemtype="http://schema.org/Service">
+    <div class="container">
+        <header class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white mb-3" itemprop="name">نوعية الدكت المعتمد ومواصفاته</h2>
+            <p class="lead text-white-50" itemprop="description">مواصفات عالية الجودة تضمن أداءً مثاليًا ومتانة فائقة</p>
+        </header>
 
-    <!-- بداية قسم نبذة تعريفية عن الشركة -->
-    <div class="container-fluid facts my-5 py-5"
-        style="background: url('./images/baner_Hero.avif') center center/cover no-repeat;">
-        <div class="container py-5 text-center text-white">
-
-            <!-- إضافة النص الجديد على هيئة بطاقات مع أيقونات -->
-            <h2 class="display-5 mb-4 text-white">نوعية الدكت المعتمد ومواصفاته</h2>
-
-            <div class="row g-4 justify-content-center">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-fire fa-2x mr-3 text-primary"></i>
-                                <h5 class="card-title">صاج مجلفن ضد الحريق</h5>
-                            </div>
-                            <p class="card-text">سماكة 0.6 سعودي لضمان الأمان والسلامة.</p>
-                        </div>
+        <div class="specs-grid">
+            <article class="spec-card" itemprop="hasOfferCatalog">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-fire fa-2x"></i>
                     </div>
+                    <h3 class="h5">صاج مجلفن ضد الحريق</h3>
+                    <p>سماكة 0.6 سعودي لضمان الأمان والسلامة.</p>
                 </div>
+            </article>
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-bath fa-2x mr-3 text-warning"></i>
-                                <h5 class="card-title">دكت للمطابخ والحمامات</h5>
-                            </div>
-                            <p class="card-text">دكت ميت TDC فالنجات 0.6 للمطابخ والمناطق المخصصة للتدخين والحمامات.</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-bath fa-2x"></i>
                     </div>
+                    <h3 class="h5">دكت للمطابخ والحمامات</h3>
+                    <p>دكت ميت TDC فالنجات 0.6 للمطابخ والمناطق المخصصة للتدخين والحمامات.</p>
                 </div>
+            </article>
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-cogs fa-2x mr-3 text-success"></i>
-                                <h5 class="card-title">تصنيع مصنع فني</h5>
-                            </div>
-                            <p class="card-text">تصنيع وفق أعلى معايير الجودة واليقظة لضمان أفضل أداء.</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-cogs fa-2x"></i>
                     </div>
+                    <h3 class="h5">تصنيع مصنع فني</h3>
+                    <p>تصنيع وفق أعلى معايير الجودة واليقظة لضمان أفضل أداء.</p>
                 </div>
-            </div>
+            </article>
 
-            <div class="row g-4 justify-content-center mt-4">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-shield-alt fa-2x mr-3 text-danger"></i>
-                                <h5 class="card-title">العزل الخارجي الكامل</h5>
-                            </div>
-                            <p class="card-text">إيمكو Emco 24 مم (1 بوصة) مع غراء أخضر للعزل الخارجي.</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-shield-alt fa-2x"></i>
                     </div>
+                    <h3 class="h5">العزل الخارجي الكامل</h3>
+                    <p>إيمكو Emco 24 مم (1 بوصة) مع غراء أخضر للعزل الخارجي.</p>
                 </div>
+            </article>
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-water fa-2x mr-3 text-info"></i>
-                                <h5 class="card-title">العزل الداخلي ضد الرطوبة</h5>
-                            </div>
-                            <p class="card-text">العزل الداخلي 9 م أمريكي مانع للرطوبة وكاتم للصوت.</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-water fa-2x"></i>
                     </div>
+                    <h3 class="h5">العزل الداخلي ضد الرطوبة</h3>
+                    <p>العزل الداخلي 9 م أمريكي مانع للرطوبة وكاتم للصوت.</p>
                 </div>
+            </article>
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-wrench fa-2x mr-3 text-warning"></i>
-                                <h5 class="card-title">التركيب الفاخر</h5>
-                            </div>
-                            <p class="card-text">حزام تايواني مع كلبسات تايواني كل 30 سم لضمان الثبات والمتانة.</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-wrench fa-2x"></i>
                     </div>
+                    <h3 class="h5">التركيب الفاخر</h3>
+                    <p>حزام تايواني مع كلبسات تايواني كل 30 سم لضمان الثبات والمتانة.</p>
                 </div>
-            </div>
+            </article>
 
-            <div class="row g-4 justify-content-center mt-4">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-cogs fa-2x mr-3 text-primary"></i>
-                                <h5 class="card-title">الصاج الكونيكشن</h5>
-                            </div>
-                            <p class="card-text">سماكة 0.8 مع العزل الكامل لضمان الأداء المثالي.</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-cogs fa-2x"></i>
                     </div>
+                    <h3 class="h5">الصاج الكونيكشن</h3>
+                    <p>سماكة 0.8 مع العزل الكامل لضمان الأداء المثالي.</p>
                 </div>
+            </article>
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-ventilator fa-2x mr-3 text-info"></i>
-                                <h5 class="card-title">الفليكسبل</h5>
-                            </div>
-                            <p class="card-text">فليكسبل 8 بوصة سوبر فليكس المستورد (لدى شركة مريم).</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-ventilator fa-2x"></i>
                     </div>
+                    <h3 class="h5">الفليكسبل</h3>
+                    <p>فليكسبل 8 بوصة سوبر فليكس المستورد (لدى شركة مريم).</p>
                 </div>
+            </article>
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card text-white bg-dark border-light shadow-lg" style="border-radius: 15px;">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-check-circle fa-2x mr-3 text-success"></i>
-                                <h5 class="card-title">اختبار الدخان</h5>
-                            </div>
-                            <p class="card-text">إجراء اختبار دخان لكامل المشروع بعد التنفيذ لضمان الجودة.</p>
-                        </div>
+            <article class="spec-card">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-check-circle fa-2x"></i>
                     </div>
+                    <h3 class="h5">اختبار الدخان</h3>
+                    <p>إجراء اختبار دخان لكامل المشروع بعد التنفيذ لضمان الجودة.</p>
                 </div>
-            </div>
-
+            </article>
         </div>
     </div>
-    <!-- نهاية قسم نبذة تعريفية عن الشركة -->
+</section>
+
+
+<!-- نهاية قسم نبذة تعريفية عن الشركة -->
 
 
 
 
     <!-- بداية قسم المميزات -->
-    <div class="container-xxl py-5" dir="rtl" id="features">
+    <section class="features py-5" dir="rtl" id="features">
         <div class="container">
-            <div class="row g-5 align-items-center">
-                <!-- عنوان القسم والنص -->
-                <div class="col-12 text-center">
-                    <h1 class="display-6 mb-5">تكييف مركزي لا مثيل له مع شركة كول مود!</h1>
-                    <p class="mb-5">تبحث عن شركة تقوم بتركيب وتوريد وتأسيس أنظمة التكييف المركزي؟ <br>
-                        شركة كول مود هي اختيارك الأفضل والأنسب، حيث نقدم حلولاً متكاملة وخدمات متميزة في مجال التكييف
-                        المركزي بجده بأسعار مناسبة وجودة عالية.</p>
+            <!-- Header Section -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-5 fw-bold mb-3">تكييف مركزي لا مثيل له مع شركة كول مود!</h1>
+                    <p class="lead text-muted">نقدم حلولاً متكاملة وخدمات متميزة في مجال التكييف المركزي بجده بأسعار مناسبة وجودة عالية.</p>
                 </div>
-
-                <!-- صورة الجانب الأيمن -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative rounded overflow-hidden" style="min-height: 400px;">
-                        <img class="img-fluid w-100 h-100" src="./images/Artboard 7.avif" alt="صورة خدمات كول مود"
-                            style="object-fit: cover; border-radius: 15px;">
+            </div>
+    
+            <!-- Main Content -->
+            <div class="row g-4">
+                <!-- Image Column -->
+                <div class="col-lg-6">
+                    <div class="position-relative rounded-4 overflow-hidden shadow-lg h-100">
+                        <img class="img-fluid w-100 h-100" 
+                             src="./images/Artboard 7.avif" 
+                             alt="خدمات كول مود"
+                             loading="lazy"
+                             style="object-fit: cover;">
                     </div>
                 </div>
-
-                <!-- الكروت -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+    
+                <!-- Services Cards -->
+                <div class="col-lg-6">
                     <div class="row g-4">
-                        <!-- كارت 1 -->
-                        <div class="col-md-12 col-sm-6">
-                            <div class="card text-center border-0 shadow-sm p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-08-light.png" alt="خدمات التكييف"
-                                        style="width: 70px; background-color: orange; border-radius: 50%; padding: 10px;">
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm hover-card">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="icon-circle bg-primary text-white">
+                                            <i class="fas fa-tools fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title mb-0 me-3">تنفيذ أنظمة التكييف المركزي</h5>
+                                    </div>
+                                    <p class="card-text">توريد وتركيب وتأسيس أنظمة متكاملة للتكييف المركزي</p>
                                 </div>
-                                <h5 class="card-title mb-3">تنفيذ أنظمة التكييف المركزي</h5>
-                                <p class="card-text">توريد وتركيب وتأسيس أفضل مشاريع التكييف المركزي مثل (كونسيلد مخفي،
-                                    باكيدج يونت، دولاب، كاسيت، تشيلر، VRV، VRF).</p>
                             </div>
                         </div>
-
-                        <!-- كارت 2 -->
-                        <div class="col-md-12 col-sm-6">
-                            <div class="card text-center border-0 shadow-sm p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-10-light.png" alt="أسعار تنافسية"
-                                        style="width: 70px; background-color: orange; border-radius: 50%; padding: 10px;">
+    
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm hover-card">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="icon-circle bg-warning text-white">
+                                            <i class="fas fa-cogs fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title mb-0 me-3">صيانة دورية شاملة</h5>
+                                    </div>
+                                    <p class="card-text">خدمات صيانة احترافية لضمان كفاءة وعمر أطول لنظام التكييف</p>
                                 </div>
-                                <h5 class="card-title mb-3">صيانة أنظمة التكييف المركزي</h5>
-                                <p class="card-text">نقدم خدمات صيانة شاملة لضمان أداء عالي ومستمر لأنظمة التكييف الخاصة
-                                    بكم.</p>
                             </div>
                         </div>
-
-                        <!-- كارت 3 -->
-                        <div class="col-md-12 col-sm-6">
-                            <div class="card text-center border-0 shadow-sm p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-06-light.png" alt="دعم على مدار الساعة"
-                                        style="width: 70px; background-color: orange; border-radius: 50%; padding: 10px;">
+    
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm hover-card">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="icon-circle bg-success text-white">
+                                            <i class="fas fa-headset fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title mb-0 me-3">دعم فني 24/7</h5>
+                                    </div>
+                                    <p class="card-text">فريق متخصص من المهندسين والفنيين لخدمتكم على مدار الساعة</p>
                                 </div>
-                                <h5 class="card-title mb-3">دعم فني 24/7</h5>
-                                <p class="card-text">فريقنا من الإداريين والمهندسين والفنيين يعمل بخبرات وكفاءات مميزة
-                                    لضمان دعم دائم على مدار الساعة.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+    
+            <!-- Specifications Section -->
+            <div class="specs-section mt-5 pt-5">
+                <h2 class="text-center mb-5">مواصفات وخصائص خدماتنا</h2>
+                <div class="row g-4">
+                    <!-- Add your specification cards here with the new design -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
 
             <!-- إضافة قسم النوعية والمواصفات -->
-            <div class="row g-5 align-items-center mt-5">
-                <div class="col-12 text-center">
-                    <h2 class="display-6 mb-5">نوعية النحاس المعتمد ومواصفاته</h2>
+            <div class="container mt-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 font-bold mb-4">نوعية النحاس المعتمد ومواصفاته</h2>
+                    <p class="lead text-muted">نقدم لكم مجموعة من المواصفات عالية الجودة التي تضمن الأداء الأمثل في أنظمة التكييف والتمديدات الكهربائية.</p>
                 </div>
-
-                <!-- كروت المواصفات -->
-                <div class="row">
-                    <!-- كارت المواصفة 1 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                <!-- الشبكة الجديدة -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- بطاقة مواصفة -->
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-cogs fa-3x text-warning"></i>
                             </div>
-                            <h5 class="card-title mb-3">نحاس مولر أمريكي</h5>
-                            <p class="card-text">مقاس 8/5 و /3 8 يتم استخدامه في كافة التمديدات الخاصة بأنظمة التكييف.
-                            </p>
-                        </div>
+                            <h3 class="h5 mb-3">نحاس مولر أمريكي</h3>
+                            <p>استخدام نحاس عالي الجودة بقياسات دقيقة لأنظمة التكييف لضمان الكفاءة والمتانة.</p>
+                        </article>
                     </div>
-
-                    <!-- كارت المواصفة 2 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-shield-alt fa-3x text-info"></i>
                             </div>
-                            <h5 class="card-title mb-3">عازل خارجي مانع للرطوبة</h5>
-                            <p class="card-text">يتم استخدام عازل خارجي لكل ماسورة لحمايتها من الرطوبة وتحسين أداء
-                                النظام.</p>
-                        </div>
+                            <h3 class="h5 mb-3">عازل خارجي مانع للرطوبة</h3>
+                            <p>عوازل متطورة تحمي الأنابيب من الرطوبة لتحسين كفاءة النظام.</p>
+                        </article>
                     </div>
-
-                    <!-- كارت المواصفة 3 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-tape fa-3x text-success"></i>
                             </div>
-                            <h5 class="card-title mb-3">شطرطون تايواني أسود</h5>
-                            <p class="card-text">استخدام تيب (شطرطون) تايواني أسود معتمد لضمان الجودة العالية.</p>
-                        </div>
+                            <h3 class="h5 mb-3">شطرطون تايواني أسود</h3>
+                            <p>استخدام شطرطون معتمد لضمان تثبيت مثالي وتحسين جودة التمديدات.</p>
+                        </article>
                     </div>
-
-                    <!-- كارت المواصفة 4 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-plug fa-3x text-danger"></i>
                             </div>
-                            <h5 class="card-title mb-3">تمديد أسالك الفنار</h5>
-                            <p class="card-text">تمديد أسالك الفنار (6 خط): 2 خط 6 مم و 4 خط 2.5 مم لضمان الجودة.</p>
-                        </div>
+                            <h3 class="h5 mb-3">تمديد أسلاك الفنار</h3>
+                            <p>تمديد أسلاك عالية الجودة لضمان أمان وكفاءة النظام الكهربائي.</p>
+                        </article>
                     </div>
-
-                    <!-- كارت المواصفة 5 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-wrench fa-3x text-primary"></i>
                             </div>
-                            <h5 class="card-title mb-3">قياس فعلي بعد التمديد</h5>
-                            <p class="card-text">يتم القياس الفعلي بعد الانتهاء من التمديدات لضمان الدقة.</p>
-                        </div>
+                            <h3 class="h5 mb-3">قياس فعلي بعد التمديد</h3>
+                            <p>التأكد من القياسات النهائية لضمان الدقة وتفادي الأخطاء.</p>
+                        </article>
                     </div>
-
-                    <!-- كارت المواصفة 6 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-spray-can fa-3x text-warning"></i>
                             </div>
-                            <h5 class="card-title mb-3">عزل خارجي كامل</h5>
-                            <p class="card-text">عزل كامل للنحاس 2 بوصة حنجور أسود مع تركيبه بالقفيز الحديد.</p>
-                        </div>
+                            <h3 class="h5 mb-3">عزل خارجي كامل</h3>
+                            <p>توفير عزل خارجي كامل باستخدام أفضل المواد لضمان الأداء الأمثل.</p>
+                        </article>
                     </div>
-
-                    <!-- كارت المواصفة 7 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-cut fa-3x text-info"></i>
                             </div>
-                            <h5 class="card-title mb-3">قص التمديدات بالحوائط</h5>
-                            <p class="card-text">يتم قص أماكن التمديدات بالحوائط باستخدام الصاروخ بدقة.</p>
-                        </div>
+                            <h3 class="h5 mb-3">قص التمديدات بالحوائط</h3>
+                            <p>استخدام أدوات حديثة ودقيقة لقص التمديدات بدون تأثير على البنية.</p>
+                        </article>
                     </div>
-
-                    <!-- كارت المواصفة 8 -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
+            
+                    <div class="col">
+                        <article class="card h-100 text-center border-0 shadow-sm p-4">
                             <div class="icon mb-3">
                                 <i class="fas fa-tools fa-3x text-success"></i>
                             </div>
-                            <h5 class="card-title mb-3">أدوات صحية جودة عالية</h5>
-                            <p class="card-text">نستخدم جميع الأدوات الصحية التي تضمن أفضل أداء للنظام.</p>
-                        </div>
+                            <h3 class="h5 mb-3">أدوات صحية عالية الجودة</h3>
+                            <p>استخدام أفضل الأدوات الصحية لتحسين الأداء العام للنظام.</p>
+                        </article>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     <!-- نهاية قسم المميزات -->
+<section class="warranty-section py-6" id="warranty" dir="rtl">
+    <div class="container">
+        <!-- Header -->
+        <header class="text-center mb-5">
+            <h2 class="display-4 fw-bold pt-3">ضمان شامل يمتد لـ 10 سنوات</h2>
+            <p class="lead text-muted">نقدم أفضل ضمان في السوق لنؤكد ثقتنا في جودة خدماتنا</p>
+        </header>
 
-    <!-- بداية قسم الضمان -->
-    <div class="container-xxl py-5" dir="rtl" id="warranty">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <!-- عنوان القسم -->
-                <div class="col-12 text-center mb-5">
-                    <h2 class="display-6">ضمان الأعمال المنفذة</h2>
-                </div>
-
-                <!-- كروت الضمان -->
-                <div class="row">
-                    <!-- كارت 1: ضمان على أعمال الدكت -->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
-                            <div class="icon mb-3">
+        <!-- Warranty Cards Grid -->
+        <div class="warranty-grid">
+            <div class="row g-4">
+                <!-- Duct Warranty -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="warranty-card h-100 bg-white rounded-4 p-4 hover-lift">
+                        <div class="warranty-icon mb-4">
+                            <div class="icon-circle bg-success-soft rounded-circle d-inline-flex p-4">
                                 <i class="fas fa-tools fa-3x text-success"></i>
                             </div>
-                            <h5 class="card-title mb-3">ضمان 10 سنوات على أعمال الدكت</h5>
-                            <p class="card-text">ضمان عشرة سنوات (10 سنوات) على أعمال الدكت والتركيبات بالموقع.</p>
+                            <span class="warranty-badge position-absolute top-0 end-0 bg-success text-white px-3 py-2 rounded-pill mt-3 me-3">
+                                10 سنوات
+                            </span>
                         </div>
-                    </div>
+                        <div class="warranty-content">
+                            <h3 class="h4 mb-3">ضمان أعمال الدكت</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>ضمان شامل على التركيبات</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>صيانة دورية مجانية</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
 
-                    <!-- كارت 2: ضمان على أعمال تمديدات النحاس -->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
-                            <div class="icon mb-3">
-                                <i class="fas fa-cogs fa-2x mr-3 text-success"></i>
+                <!-- Copper Installation Warranty -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="warranty-card h-100 bg-white rounded-4 p-4 hover-lift">
+                        <div class="warranty-icon mb-4">
+                            <div class="icon-circle bg-primary-soft rounded-circle d-inline-flex p-4">
+                                <i class="fas fa-cogs fa-3x text-primary"></i>
                             </div>
-                            <h5 class="card-title mb-3"> ضمان 10 سنوات على تمديدات النحاس</h5>
-                            <p class="card-text">ضمان عشرة سنوات (10 سنوات) على أعمال تمديدات النحاس بعد الضغط
-                                والفاكيووم والتركيب.</p>
+                            <span class="warranty-badge position-absolute top-0 end-0 bg-primary text-white px-3 py-2 rounded-pill mt-3 me-3">
+                                10 سنوات
+                            </span>
                         </div>
-                    </div>
+                        <div class="warranty-content">
+                            <h3 class="h4 mb-3">ضمان تمديدات النحاس</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>فحص الضغط والفاكيووم</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>جودة التركيب المضمونة</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
 
-                    <!-- كارت 3: ضمان في حالة التهريب -->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card text-center border-0 shadow-sm p-4">
-                            <div class="icon mb-3">
-                                <i class="fas fa-exclamation-triangle fa-3x text-danger"></i>
+                <!-- Leakage Warranty -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="warranty-card h-100 bg-white rounded-4 p-4 hover-lift">
+                        <div class="warranty-icon mb-4">
+                            <div class="icon-circle bg-warning-soft rounded-circle d-inline-flex p-4">
+                                <i class="fas fa-shield-alt fa-3x text-warning"></i>
                             </div>
-                            <h5 class="card-title mb-3">ضمان التهريب خلال فترة الضمان</h5>
-                            <p class="card-text">في حالة وجود تهريب خلال فترة الضمان، يلتزم المقاول بتغيير النحاس.</p>
+                            <span class="warranty-badge position-absolute top-0 end-0 bg-warning text-dark px-3 py-2 rounded-pill mt-3 me-3">
+                                حماية شاملة
+                            </span>
                         </div>
-                    </div>
+                        <div class="warranty-content">
+                            <h3 class="h4 mb-3">ضمان ضد التسريب</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-warning me-2"></i>
+                                    <span>استبدال فوري للنحاس</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-warning me-2"></i>
+                                    <span>معالجة سريعة للمشكلة</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
     </div>
-    <!-- نهاية قسم الضمان -->
+</section>
+
+
 
 
 
@@ -880,145 +917,178 @@
 
 
 
-    <!-- بداية قسم التكييف وخدمات الشركة -->
-    <div class="container-xxl py-5">
+<!-- بداية قسم التكييف وخدمات الشركة -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- القسم الأول: الصورة -->
+            <div class="col-lg-6">
+                <div class="position-relative rounded overflow-hidden shadow-lg">
+                    <img class="img-fluid w-100 rounded" src="./images/Artboard 4.avif" alt="أفضل خدمات التكييف المركزي">
+                </div>
+            </div>
+
+            <!-- القسم الثاني: النص -->
+            <div class="col-lg-6" dir="rtl">
+                <h2 class="display-5 fw-bold mb-4 text-dark">نظام تكييف مركزي احترافي يناسب الجميع</h2>
+                <p class="lead text-muted mb-4">
+                    <strong>شركة كول مود</strong> تقدم حلولًا متكاملة لتوريد وتركيب أنظمة التكييف المركزي بجدة. نحن نضمن أعلى جودة باستخدام أفضل المواد وأسعار تنافسية تناسب الجميع.
+                </p>
+                <ul class="list-unstyled mb-4">
+                    <li class="d-flex align-items-center mb-3">
+                        <span class="icon text-primary me-3">
+                            <i class="fa fa-check-circle fa-lg"></i>
+                        </span>
+                        <span>توريد وتركيب التكييف المركزي (كونسيلد، تشيلر، VRV).</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <span class="icon text-primary me-3">
+                            <i class="fa fa-check-circle fa-lg"></i>
+                        </span>
+                        <span>تنفيذ مشاريع متكاملة مع خدمات العزل وتركيب الدكت.</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <span class="icon text-primary me-3">
+                            <i class="fa fa-check-circle fa-lg"></i>
+                        </span>
+                        <span>خطط صيانة دورية تناسب جميع الاحتياجات.</span>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <span class="icon text-primary me-3">
+                            <i class="fa fa-check-circle fa-lg"></i>
+                        </span>
+                        <span>عروض مذهلة على كافة خدماتنا طوال العام.</span>
+                    </li>
+                </ul>
+                <p class="text-muted">
+                    تواصل معنا الآن للاستفادة من أفضل خدمات التكييف المركزي سواء للمنزل أو المشاريع التجارية.
+                </p>
+                <p class="fw-bold mb-0">
+                    <i class="fa fa-phone-alt text-primary me-2"></i>
+                    <strong>اتصل أو راسلنا عبر الواتساب:</strong>
+                    <a href="tel:0596678717" class="text-primary">0596678717</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- نهاية قسم التكييف وخدمات الشركة -->
+
+    <!-- بداية قسم الخدمات المميزة -->
+    <section class="py-5 bg-light">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <!-- القسم الأول: الصورة -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="./images/Artboard 4.avif" alt="أفضل خدمات التكييف المركزي">
+                <div class="col-md-6 order-md-2">
+                    <div class="position-relative rounded shadow-lg overflow-hidden">
+                        <img class="img-fluid w-100" src="./images/profile_.avif" alt="أفضل خدمات التكييف المركزي">
                     </div>
                 </div>
+    
                 <!-- القسم الثاني: النص -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" dir="rtl">
-                    <h1 class="display-6 mb-4">نظام تكييف مركزي احترافي يناسب الجميع</h1>
-                    <p class="mb-4">
-                        <strong>شركة كول مود</strong> هي الشركة الرائدة في جده لتوريد وتركيب أنظمة التكييف المركزي. نقدم
-                        خدمات عالية الجودة بأسعار تنافسية تناسب جميع العملاء.
-                        نحن نتميز بخدماتنا الاحترافية التي تشمل تأسيس، تركيب، وصيانة أنظمة التكييف المركزي باستخدام أفضل
-                        المواد مثل النحاس الأمريكي المولار.
+                <div class="col-md-6 order-md-1" dir="rtl">
+                    <h2 class="display-5 fw-bold text-dark mb-4">خدمات متميزة للأفراد والشركات</h2>
+                    <p class="lead text-muted mb-4">
+                        مع <strong>شركة كول مود</strong>، نقدم حلولًا متكاملة لتوريد وتركيب أنظمة التكييف المركزي للمنازل والشركات.
+                        نحن نتميز بالاحترافية والجودة، مع التزام كامل بتقديم خدمات تناسب احتياجات عملائنا بأسعار تنافسية.
                     </p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> توريد وتركيب التكييف المركزي
-                            (كونسيلد، تشيلر، VRV، وغيرها).</li>
-                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> تنفيذ مشاريع متكاملة مع خدمات
-                            العزل وتركيب الدكت.</li>
-                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> خطط صيانة دورية تناسب جميع
-                            الاحتياجات.</li>
-                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> عروض مذهلة على كافة خدماتنا طوال
-                            العام.</li>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">
+                            <i class="fa fa-check-circle text-success me-2"></i>
+                            أنظمة تبريد موفرة للطاقة.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-check-circle text-success me-2"></i>
+                            فريق متخصص بخدمات التكييف.
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-check-circle text-success me-2"></i>
+                            حلول مخصصة للأفراد والشركات.
+                        </li>
                     </ul>
-                    <p>
-                        تواصل معنا الآن للاستفادة من أفضل خدمات التكييف المركزي التي تناسب جميع متطلباتك، سواء كنت تبحث
-                        عن التكييف المنزلي أو التجاري.
-                    </p>
-                    <p class="mb-0">
-                        <strong>اتصل أو راسلنا عبر الواتساب:</strong> <a href="tel:0596678717"
-                            class="text-primary">0596678717</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- نهاية قسم التكييف وخدمات الشركة -->
-    <!-- بداية قسم الخدمات المميزة -->
-    <div class="container-fluid overflow-hidden my-5 px-lg-0">
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <!-- القسم الأول: النص -->
-                <div class="col-lg-6 quote-text" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-                    <div class="h-100 px-4 px-sm-5 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" dir="rtl">
-                        <h1 class="text-white mb-4">خدمات متميزة للأفراد والشركات</h1>
-                        <p class="text-light mb-5">
-                            مع <strong>شركة كول مود</strong>، نقدم حلولًا متكاملة لتوريد وتركيب أنظمة التكييف المركزي
-                            للمنازل والشركات.
-                            نحن نتميز بالاحترافية والجودة، مع التزام كامل بتقديم خدمات تناسب احتياجات عملائنا بأسعار
-                            تنافسية.
-                            احصل على أنظمة تبريد حديثة وموفرة للطاقة مع فريق عملنا المتخصص.
-                        </p>
-                        <a href="https://api.whatsapp.com/send?phone=%2B966596678717&context=ARB6zznZYiJMOK0a8DQ_ONQUJvIuaQNW8oqk9AZq0YednBC-xKtOxQxRTHJDW1SFUc-anCNB5WrscfZpGhTNaDtgCvjw4wsVfhwBgqJeXnfZMpeI4Bsff7ok6i35KXsiMf_MeK9g13ZhaSUzJvXh0CTNPQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGwd0xleHRuA2FlbQIxMAABHVCWbCfJCOgneiRfzUrhhZZVwuqPe_kvvW9WjbyvvtTO4-Xy0U4oX9fp3A_aem_4DUfK6WaNqTGB5hQIBllxQ"
-                            class="align-self-start btn btn-success py-3 px-5">تواصل معنا</a>
-                        <!-- زر تحميل PDF -->
-                        <a href="./Compant Profile CoolMode last.pdf"
-                            class="align-self-start btn btn-primary py-3 px-5 mt-4"
-                            download="خدمات_التكييف_المركزي.pdf">تحميل الكتيب</a>
-                    </div>
-                </div>
-                <!-- القسم الثاني: الصورة -->
-                <div class="col-lg-6 quote-form" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
-                    <div class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100 h-100" src="./images/profile_.avif" alt="خدمات التكييف المركزي">
-                        </div>
+                    <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://api.whatsapp.com/send?phone=%2B966596678717" class="btn btn-success py-3 px-5 me-sm-3 mb-3 mb-sm-0 ">
+                            <i class="fa fa-whatsapp me-2"></i>تواصل معنا
+                        </a>
+                        <a href="./Compant Profile CoolMode last.pdf" class="btn btn-primary py-3 px-5" download="خدمات_التكييف_المركزي.pdf">
+                            <i class="fa fa-download me-2"></i>تحميل الكتيب
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
 
     <!-- نهاية قسم الخدمات المميزة -->
-    <div class="container">
-        <div class="faq-container">
-            <div class="faq-header">
-                <h2>الأسئلة الشائعة عن مكيفات جدة</h2>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-dark">الأسئلة الشائعة عن مكيفات جدة</h2>
+                <p class="text-muted">إجابات على أكثر الأسئلة شيوعًا حول تركيب وصيانة المكيفات في جدة</p>
             </div>
-            <div class="accordion" id="acFAQAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+    
+            <div class="accordion" id="faqAccordion">
+                <!-- السؤال الأول -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faqHeadingOne">
+                        <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne">
                             ما هي أفضل أنواع المكيفات المناسبة لمناخ جدة؟
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#acFAQAccordion">
-                        <div class="accordion-body">
+                    <div id="faqCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
                             المكيفات المركزية والسبليت موفرة الطاقة هي الأفضل لمناخ جدة الحار. تتميز هذه الأنواع بكفاءة التبريد العالية والقدرة على التعامل مع درجات الحرارة المرتفعة.
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+    
+                <!-- السؤال الثاني -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faqHeadingTwo">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo">
                             كم تكلفة تركيب مكيف مركزي في جدة؟
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acFAQAccordion">
-                        <div class="accordion-body">
+                    <div id="faqCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
                             تتراوح تكلفة تركيب المكيف المركزي في جدة حسب مساحة المبنى وتعقيد التركيب والماركة المستخدمة.
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+    
+                <!-- السؤال الثالث -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faqHeadingThree">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree">
                             كم مرة يجب صيانة المكيف سنويًا؟
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#acFAQAccordion">
-                        <div class="accordion-body">
+                    <div id="faqCollapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
                             يُنصح بإجراء صيانة دورية للمكيف مرتين سنويًا، مرة قبل موسم الصيف ومرة بعده للحفاظ على كفاءة التشغيل وإطالة عمر الجهاز.
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+    
+                <!-- السؤال الرابع -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faqHeadingFour">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour">
                             ما هي مميزات المكيفات موفرة الطاقة؟
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#acFAQAccordion">
-                        <div class="accordion-body">
+                    <div id="faqCollapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
                             المكيفات موفرة الطاقة توفر تكاليف الكهرباء بنسبة تصل إلى 50٪، وتساعد على تقليل الاستهلاك الكهربائي مع الحفاظ على برودة عالية الجودة.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
+    </section>
+    
+    <section class="container">
         <!-- العنوان -->
         <div class="text-center my-5">
             <h2 class="display-4 font-weight-bold">شركاء النجاح</h2>
@@ -1060,160 +1130,172 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- بداية قسم مواصفات الصرف -->
-    <div class="container-xxl py-5" dir="rtl" id="drainage-specs">
+    </section>
+    <section class="py-5 bg-light">
         <div class="container">
-            <div class="row g-5 align-items-center">
-                <!-- عنوان القسم -->
-                <div class="col-12 text-center mb-5">
-                    <h2 class="display-5 text-dark font-weight-bold"> توريد وتركيب غرف التبريد وتلاجات العرض</h2>
-                </div>
-                <!-- كروت مواصفات الصرف -->
-                <div class="row d-flex justify-content-center">
-                    <!-- كارت 1: صرف Trap-U أفقي مع T للرائحة -->
-                    <img src="./images/WhatsApp Image 2024-12-05 at 19.13.11_673f5748.jpg" alt=" صورة الكارت 1"
-                        class="img-fluid w-50 ">
-                    <img src="./images/WhatsApp Image 2024-12-05 at 19.13.11_8e5dd282.jpg" alt=" صورة الكارت 1"
-                        class="img-fluid w-50">
-
-                </div>
+            <!-- العنوان: توريد وتركيب غرف التبريد -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">توريد وتركيب غرف التبريد وتلاجات العرض</h2>
+                <p class="text-muted">أفضل الحلول المخصصة لغرف التبريد وتلاجات العرض بمواصفات عالية الجودة.</p>
             </div>
-        </div>
-    </div>
-    <!-- بداية قسم مواصفات الصرف -->
-    <div class="container-xxl py-5" dir="rtl" id="drainage-specs">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <!-- عنوان القسم -->
-                <div class="col-12 text-center mb-5">
-                    <h2 class="display-5 text-dark font-weight-bold">مواصفات الصرف للوحدات الداخلية</h2>
+    
+            <!-- صور غرف التبريد -->
+            <div class="row g-4 justify-content-center">
+                <!-- الصورة الأولى -->
+                <div class="col-md-6">
+                    <div class="position-relative rounded shadow-lg overflow-hidden" style="aspect-ratio: 4 / 3;">
+                        <img src="./images/WhatsApp Image 2024-12-05 at 19.13.11_673f5748.jpg" alt="غرف التبريد" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                    </div>
                 </div>
-
-                <!-- كروت مواصفات الصرف -->
-                <div class="row">
-                    <!-- كارت 1: صرف Trap-U أفقي مع T للرائحة -->
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card text-center border-0 shadow-lg p-4 rounded-4 bg-light">
-                            <div class="icon mb-3">
-                                <i class="fas fa-tint fa-3x text-primary"></i>
-                            </div>
-                            <h5 class="card-title mb-3 text-dark font-weight-bold">صرف Trap-U أفقي مع T للرائحة</h5>
-                            <p class="card-text text-muted">يتم عمل صرف Trap-U أفقي مع إضافة T للرائحة، بالإضافة إلى طبه
-                                تسليك.</p>
-                        </div>
-                    </div>
-
-                    <!-- كارت 2: المواسير المستخدمة -->
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card text-center border-0 shadow-lg p-4 rounded-4 bg-light">
-                            <div class="icon mb-3">
-                                <i class="fas fa-cogs fa-2x mr-3 text-success"></i>
-                            </div>
-                            <h5 class="card-title mb-3 text-dark font-weight-bold">المواسير المستخدمة</h5>
-                            <p class="card-text text-muted">المواسير المستخدمة للـ Trap-U والصرف الرأسي هي مواسير رمادي
-                                نبرو أو الخليج مع عزل كامل وتيب تايواني أسود.</p>
-                        </div>
-                    </div>
-
-                    <!-- كارت 3: الربر المستخدم في العزل -->
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card text-center border-0 shadow-lg p-4 rounded-4 bg-light">
-                            <div class="icon mb-3">
-                                <i class="fas fa-cogs fa-3x text-warning"></i>
-                            </div>
-                            <h5 class="card-title mb-3 text-dark font-weight-bold">الربر المستخدم في العزل</h5>
-                            <p class="card-text text-muted">الربر المستخدم في العزل هو SUPERLON ماليزي 28×13 مم.</p>
-                        </div>
-                    </div>
-
-                    <!-- كارت 4: مواصفات الصرف للوحدات المختلفة -->
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card text-center border-0 shadow-lg p-4 rounded-4 bg-light">
-                            <div class="icon mb-3">
-                                <i class="fas fa-water fa-3x text-success"></i>
-                            </div>
-                            <h5 class="card-title mb-3 text-dark font-weight-bold">مواصفات الصرف للوحدات المختلفة</h5>
-                            <p class="card-text text-muted">مواصفات الصرف لكل من الوحدات السبليت الجداري، الكونسيلد
-                                المخفي، والكاسيت.</p>
-                        </div>
-                    </div>
-
-                    <!-- كارت 5: قص مكان الصرف بالجدار -->
-                    <div class="col-md-4 col-sm-12 mb-4">
-                        <div class="card text-center border-0 shadow-lg p-4 rounded-4 bg-light">
-                            <div class="icon mb-3">
-                                <i class="fas fa-cut fa-3x text-danger"></i>
-                            </div>
-                            <h5 class="card-title mb-3 text-dark font-weight-bold">قص مكان الصرف بالجدار</h5>
-                            <p class="card-text text-muted">يتم قص مكان الصرف بالجدار باستخدام الصاروخ.</p>
-                        </div>
+                <!-- الصورة الثانية -->
+                <div class="col-md-6">
+                    <div class="position-relative rounded shadow-lg overflow-hidden" style="aspect-ratio: 4 / 3;">
+                        <img src="./images/WhatsApp Image 2024-12-05 at 19.13.11_8e5dd282.jpg" alt="تلاجات العرض" class="img-fluid w-100 h-100" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- نهاية قسم مواصفات الصرف -->
+    </section>
+    
+    <section class="py-5 bg-white">
+        <div class="container">
+            <!-- العنوان: مواصفات الصرف للوحدات الداخلية -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">مواصفات الصرف للوحدات الداخلية</h2>
+                <p class="text-muted">أهم مواصفات الصرف التي تضمن كفاءة وجودة عالية لأنظمة التكييف.</p>
+            </div>
+    
+            <!-- المواصفات -->
+            <div class="row g-4">
+                <!-- كارت 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-tint fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-3">صرف Trap-U أفقي مع T للرائحة</h5>
+                        <p class="text-muted">يتم عمل صرف Trap-U أفقي مع إضافة T للرائحة، بالإضافة إلى طبه تسليك.</p>
+                    </div>
+                </div>
+    
+                <!-- كارت 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-cogs fa-3x text-success"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-3">المواسير المستخدمة</h5>
+                        <p class="text-muted">المواسير المستخدمة للـ Trap-U والصرف الرأسي هي مواسير رمادي نبرو أو الخليج مع عزل كامل وتيب تايواني أسود.</p>
+                    </div>
+                </div>
+    
+                <!-- كارت 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-shield-alt fa-3x text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-3">الربر المستخدم في العزل</h5>
+                        <p class="text-muted">الربر المستخدم في العزل هو SUPERLON ماليزي 28×13 مم.</p>
+                    </div>
+                </div>
+    
+                <!-- كارت 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-water fa-3x text-info"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-3">مواصفات الصرف للوحدات المختلفة</h5>
+                        <p class="text-muted">مواصفات الصرف لكل من الوحدات السبليت الجداري، الكونسيلد المخفي، والكاسيت.</p>
+                    </div>
+                </div>
+    
+                <!-- كارت 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 text-center p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-cut fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-3">قص مكان الصرف بالجدار</h5>
+                        <p class="text-muted">يتم قص مكان الصرف بالجدار باستخدام الصاروخ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 
 
 
     <!-- معرض الأعمال -->
-    <div class="container-xxl py-5" id="projects">
+    <section class="py-5 bg-light" id="projects">
         <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-5">استعرض مشاريعنا المتميزة في مجال التبريد والتكييف</h1>
-                <p>نقدم خدمات احترافية في تصميم وتنفيذ أنظمة التبريد والتكييف التي تناسب كافة البيئات، سواءً التجارية أو
-                    السكنية.</p>
+            <!-- العنوان -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">استعرض مشاريعنا المتميزة في مجال التبريد والتكييف</h2>
+                <p class="text-muted lead">نقدم خدمات احترافية في تصميم وتنفيذ أنظمة التبريد والتكييف التي تناسب كافة البيئات، سواء التجارية أو السكنية.</p>
             </div>
+    
+            <!-- الشبكة -->
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="project-item">
-                        <div class="project-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="./images/Artboard 6.avif" alt="مشروع تبريد مركزي">
+                <!-- مشروع 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="project-img position-relative">
+                            <img src="./images/Artboard 6.avif" alt="مشروع تركيب نظام تبريد مركزي" class="img-fluid rounded-top">
                         </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>تركيب نظام تبريد مركزي</h5>
-                            <p class="text-muted">تم تنفيذ المشروع في مركز تجاري كبير لضمان راحة العملاء والزوار.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="project-item">
-                        <div class="project-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="./images/Artboard 7.avif" alt="مشروع صيانة تكييف">
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>صيانة أنظمة التكييف</h5>
-                            <p class="text-muted">تحديث وصيانة نظام التكييف الخاص بمجمع إداري كبير.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">تركيب نظام تبريد مركزي</h5>
+                            <p class="card-text text-muted">تم تنفيذ المشروع في مركز تجاري كبير لضمان راحة العملاء والزوار.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="project-item">
-                        <div class="project-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="./images/Artboard 1.avif" alt="مشروع تصميم وحدة تبريد">
+    
+                <!-- مشروع 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="project-img position-relative">
+                            <img src="./images/Artboard 7.avif" alt="مشروع صيانة أنظمة التكييف" class="img-fluid rounded-top">
                         </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>تصميم وحدة تبريد خاصة</h5>
-                            <p class="text-muted">حلول مبتكرة لتبريد المخازن وحفظ البضائع في درجات حرارة مثالية.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">صيانة أنظمة التكييف</h5>
+                            <p class="card-text text-muted">تحديث وصيانة نظام التكييف الخاص بمجمع إداري كبير.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="project-item">
-                        <div class="project-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="./images/Artboard 3.avif" alt="مشروع تركيب وحدات تكييف">
+    
+                <!-- مشروع 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="project-img position-relative">
+                            <img src="./images/Artboard 1.avif" alt="مشروع تصميم وحدة تبريد خاصة" class="img-fluid rounded-top">
                         </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>تركيب وحدات تكييف متعددة</h5>
-                            <p class="text-muted">مشروع في فيلا سكنية لضمان توزيع مثالي للهواء البارد.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">تصميم وحدة تبريد خاصة</h5>
+                            <p class="card-text text-muted">حلول مبتكرة لتبريد المخازن وحفظ البضائع في درجات حرارة مثالية.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- مشروع 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="project-img position-relative">
+                            <img src="./images/Artboard 3.avif" alt="مشروع تركيب وحدات تكييف متعددة" class="img-fluid rounded-top">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">تركيب وحدات تكييف متعددة</h5>
+                            <p class="card-text text-muted">مشروع في فيلا سكنية لضمان توزيع مثالي للهواء البارد.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    
     <!-- نهاية معرض الأعمال -->
     <!-- بداية قسم المواصفات -->
 
