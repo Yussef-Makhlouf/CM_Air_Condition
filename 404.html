@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="عذراً، الصفحة غير موجودة - كول مود لخدمات التكييف">
+    <title>404 - الصفحة غير موجودة | كول مود</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="error-page min-vh-100 d-flex align-items-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="error-content bg-white p-5 rounded-4 shadow-sm">
+                        <!-- 404 SVG Icon -->
+                        <div class="error-icon mb-4">
+                            <img src="./images/rb_59520.png" alt="404 Error" class="img-fluid" style="max-width: 200px;">
+                        </div>
+                        
+                        <h1 class="display-1 fw-bold text-primary mb-2">404</h1>
+                        <h2 class="h3 mb-4">عذراً، الصفحة غير موجودة!</h2>
+                        <p class="text-muted mb-4">الصفحة التي تبحث عنها قد تكون محذوفة أو غير متوفرة مؤقتاً.</p>
+                        
+                        <!-- Timer -->
+                        <p class="small text-muted mb-4">سيتم إعادة توجيهك للصفحة الرئيسية خلال <span id="countdown">10</span> ثواني</p>
+                        
+                        <!-- Action Buttons -->
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a href="index.html" class="btn btn-primary btn-lg rounded-pill px-5 mb-3 mb-sm-0">
+                                <i class="fas fa-home me-2"></i>
+                                العودة للرئيسية
+                            </a>
+                            <a href="tel:0596678717" class="btn btn-outline-primary btn-lg rounded-pill px-5">
+                                <i class="fas fa-headset me-2"></i>
+                                اتصل بنا
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .error-page {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    .error-content {
+        animation: fadeInUp 0.5s ease-out;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    </style>
+
+    <script>
+    // Auto redirect countdown
+    let countdown = 10;
+    const countdownDisplay = document.getElementById('countdown');
+    
+    const timer = setInterval(() => {
+        countdown--;
+        countdownDisplay.textContent = countdown;
+        
+        if (countdown <= 0) {
+            clearInterval(timer);
+            window.location.href = 'index.html';
+        }
+    }, 1000);
+    </script>
+
+    <script>
+    // Check if page doesn't exist
+    window.addEventListener('error', (e) => {
+        if (e.target.nodeName === 'IMG' || e.target.nodeName === 'SCRIPT') {
+            window.location.href = '/404.html';
+        }
+    }, true);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
