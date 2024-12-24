@@ -1,28 +1,37 @@
+# Global rules
 User-agent: *
 Allow: /
+Crawl-delay: 10
+
+# Allow static assets
 Allow: /images/
 Allow: /css/
 Allow: /js/
 Allow: /img/
-Allow: /*.js
-Allow: /*.css
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.gif
-Allow: /*.avif
-Allow: /*.webp
-Allow: /*.svg
-Allow: /*.pdf
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.avif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.pdf$
+Allow: /*.ico$
 
-# Sitemap
-Sitemap: https://www.coolmood.net/sitemap.xml
+# Disallow private or utility pages
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /*?*
+Disallow: /*?
+Disallow: /*/trackback/
+Disallow: /error_log
+Disallow: /error
+Disallow: /404.html
 
-# Crawl-delay
-Crawl-delay: 10
-
-
-
-# Specific sections
+# Allow important sections
 Allow: /#about
 Allow: /#projects
 Allow: /#features
@@ -30,11 +39,23 @@ Allow: /#contact
 Allow: /#warranty
 Allow: /#drainage-specs
 Allow: /#partners
+Allow: /Company-Profile-CoolMode.pdf
 
-# Company Profile
-Allow: /Compant Profile CoolMode last.pdf
-
-# Host
+# Site information
 Host: https://www.coolmood.net
+Sitemap: https://www.coolmood.net/sitemap.xml
+Sitemap: https://www.coolmood.net/images-sitemap.xml
 
-# Cache settings
+# Special crawlers
+User-agent: Googlebot
+Crawl-delay: 5
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /img/
+
+User-agent: Bingbot
+Crawl-delay: 10
+
+User-agent: YandexBot
+Crawl-delay: 10
