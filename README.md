@@ -9,6 +9,8 @@ You can visit the project homepage at [cm-air-condition.vercel.app](https://cm-a
 
 ## Table of Contents
 - [Description](#description)
+- [Project Homepage](#project-homepage)
+- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -41,7 +43,7 @@ To use this project, open the `index.html` file in your web browser. The website
 ## Contributing
 Contributions are welcome! To contribute, follow these steps:
 
-1. Fork the repository
+1. Fork the repository.
 2. Create a new branch:
     ```bash
     git checkout -b feature-branch
@@ -54,12 +56,32 @@ Contributions are welcome! To contribute, follow these steps:
     ```bash
     git push origin feature-branch
     ```
-5. Open a pull request
+5. Open a pull request.
 
 ## License
-This project is not currently licensed. If you would like to suggest a license, please open an issue.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+```
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ## Contact
 If you have any questions or feedback, feel free to reach out to [Yussef Makhlouf](https://github.com/Yussef-Makhlouf).
-
-Feel free to modify this draft as needed! If you have any additional information or specific sections you want to include, please let me know.
