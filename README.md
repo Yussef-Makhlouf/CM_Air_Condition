@@ -1,4 +1,3 @@
-Based on the information gathered, here is a draft of the README file for your project:
 
 # CM Air Condition
 
